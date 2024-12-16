@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ernest's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .socials {
+            cursor: pointer;
+            margin-right: 15px;
+        }
+        .socials :hover{
+            fill: white;
+        }
+        .socials :active{
+            opacity: 0.6;
+        }
+        .headtext{
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light border-bottom" style="background-color: #e3f2fd;">
+        <div class="container-lg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+            aria-label="Tggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#About">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html" target="_blank">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>   
+        </div>
+    </nav>
+
+    <div class="container-lg" style="background-image: url('assets/background.jpg');">
+        <div class="row align-items-center">
+            <div class="col-sm-12 col-md-3">
+                <img src="assets/profile.JPG" alt="Your Picture" class="img-fluid" style="border-radius: 2%; margin-top: 2%">
+                <p style="text-align:center;">Student at Colgate University </p>
+            </div>
+            <div class="col-sm-12 col-md-9">
+                <p class="headtext">
+                    I am a junior at Colgate University, double majoring in 
+                    Computer Science and Economics. My passion for technology 
+                    drives me to explore innovations and contribute to advancements, 
+                    especially in the financial industry. I aim to leverage 
+                    technology to promote socioeconomic mobility. 
+                    I enjoy socializing, giving back to my community, and meeting 
+                    new people. Let's connect and make a positive impact together!
+                </p> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Sections for demonstration purposes -->
+    <section id="About">
+        <div class="container-lg">
+            <h2>About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-sm-10 col-md-4 p-2" style="background-color: #edf1f4;">
+                    <p class="text">I served as a Computer Science Teaching Assistant
+                        at Colgate University; I supported students' learning through 
+                        lab sessions, project guidance, and one-on-one mentoring. 
+                        I helped troubleshoot coding issues, explored effective 
+                        Java programming algorithms.
+                    </p>
+                    <p class="text">I also worked with Colgate University's CDME, providing technical
+                        support for campus events. I live-streamed events, 
+                        managed Zoom meetings, troubleshot classroom tech, and provided 
+                        on-site support, ensuring flawless audio-visual experiences.
+                    </p>
+                </div>
+                <div class="col-sm-10 col-md-4 p-2" style="background-color: #edf1f4;">
+                    <p class="text">As a JSA Intern in Colgate's Career Services, 
+                        I connected with finance industry alumni, gaining valuable 
+                        industry insights, and honed my professional communication skills 
+                        through expert coaching, elevating my ability to effectively 
+                        connect and articulate ideas.
+                    </p>
+                    <p class="text">As Treasurer of Colgate's African Students Union, 
+                        I managed event budgets over $10,000, presented budget proposals, and 
+                        collaborated on event planning. I ensured fiscal responsibility, 
+                        effective communication, and union engagement, driving successful 
+                        events and community growth.
+                    </p>
+                </div>
+                <div class="col-sm-10 col-md-4 p-2" style="background-color: #edf1f4;">
+                    <p class="text">As a passionate advocate for community engagement, 
+                        I volunteer with organizations like Cove, Habitat for Humanity, 
+                        and the Amizade Group, supporting education, housing, and cultural 
+                        exchange initiatives.</p>
+                    <p class="text">
+                        I also captain my soccer team, "The Apt Kicks,"
+                        which won the Colgate Intramural Championship. Through these 
+                        experiences, I embrace new challenges, 
+                        and share moments of growth and triumph. By combining community service, 
+                        education, and teamwork, I strive to make a positive impact and inspire 
+                        others.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-sm" style="margin-top: 3%">
+            <div class="row justify-content-center">
+                <div class="col-1"><button class="prev" onclick="prevPhoto()" style="margin-top: 70%">&#10094;</button></div>
+                <div class="col-sm-6 col-md-4">
+                    <img src="assets/jsa3.jpeg" alt="Activity 1" class="img-fluid" id="current-photo" style="height: 200px; width: 300px">
+                </div>
+                <div class="col-1"><button class="next" onclick="nextPhoto()" style="margin-top: 70%">&#10095;</button></div>
+            </div>
+            <div class="row justify-content-center" style="text-align: center;"><div class="col" id="photo-summary">1 of 5: working with team on Case Competion, JSA</div></div>
+        </div>
+        <!--<div class="button-container"> -->
+    </section>
+    <script src="photos.js"></script>
+
+    <section id="Projects">
+        <div class="container-lg">
+            <h2>Projects</h2>
+            <div class="row align-items-center">
+                <div class="col-sm-10 col-md-4 bg-info-subtle p-3" style="border-radius: 5%">
+                    <p class="text">
+                        I designed and developed a robust Employee Management System tailored to organizational 
+                        needs. Utilizing MySQL and phpMyAdmin, I built an optimized relational database for 
+                        efficient data storage and retrieval. The front end, crafted with HTML/CSS, Bootstrap, 
+                        and JavaScript, offers an intuitive interface featuring functionalities like adding/removing 
+                        employees, generating payrolls, and managing attendance. Also designed an employee directory 
+                        with AJAX-powered search and filtering to ensure dynamic and streamlined search.
+                    </p>
+                    <a href="#" target="_blank"><button class="btn btn-outline-dark" style="margin-left: 30%"> Source Code</button></a>
+                </div>
+                <div class="col-sm-10 col-md-4 bg-info-subtle p-4" style="border-radius: 5%">
+                    <p class="text">Journal Entry Automator is an innovative accounting cycle optimization
+                        tool that leverages AI technology to streamline financial 
+                        data processing. By integrating Python's API with OpenAI's Chat-GPT and 
+                        Meta-AI's LLaMA, this program automates the generation of precise debits and credits 
+                        on respective T-accounts. Through its AI-driven automation, 
+                        Journal Entry Automator revolutionizes financial data management, making it a potentially 
+                        indispensable asset for accounting professionals.
+                    </p>
+                    <a href="https://github.com/ec-tino/JE-Automator" target="_blank"><button class="btn btn-outline-dark" style="margin-left: 30%"> Source Code</button></a>
+                </div>
+                <div class="col-sm-10 col-md-4 bg-info-subtle p-3" style="border-radius: 5%">
+                    <p class="text">Developed a thrilling 2D space-themed game, demonstrating proficiency
+                        in Object-Oriented Programming (OOP) principles. Players navigate their avatar 
+                        through a scrolling galaxy, collecting coins while evading alien ships and meteorites. 
+                        The game features dynamic speed and difficulty adjustment scaling with player score, 
+                        collision detection and response via Java's Graphics2D API, modular reusable classes 
+                        for game entities (Player, Enemies, Collectibles), and event-driven programming, and 
+                        seamless integration of game logic, and user input handling.
+                   </p>
+                   <a href="https://github.com/ec-tino/creative_scrolling_game" target="_blank"><button class="btn btn-outline-dark" style="margin-left: 37%"> Play Game</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Skills">
+        <div class="container-lg" style="margin-top: 2%">
+            <h3>Skills & Certifications</h3>
+            <div class="row align-items-center justify-content-center mt-4">
+                <div class="col-sm-6 col-md-2 ms-1">
+                    <ul class="list-group1">
+                        <p class="fw-bold"> Programmes</p>
+                        <li class="list-group-item">Python</li>
+                        <li class="list-group-item">Java</li>
+                        <li class="list-group-item">JavaScript</li>
+                        <li class="list-group-item">PHP</li>
+                        <li class="list-group-item">HTML/CSS</li>
+                    </ul>
+                    <ul>
+                        <p class="fw-bold"> Databases</p>
+                        <li class="list-group-item">MySQL</li>
+                        <li class="list-group-item">Couchbase</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 ms-1">
+                    <ul class="list-group1">
+                        <p class="fw-bold"> Frameworks & Liberies</p>
+                        <li class="list-group-item">Bootstrap</li>
+                        <li class="list-group-item">Requests</li>
+                        <li class="list-group-item">openCV</li>
+                        <li class="list-group-item">BM-25</li>
+                    </ul>
+                    <ul class="list-group1">
+                        <p class="fw-bold"> Certifications</p>
+                        <li class="list-group-item">HBS Core (Pass with Honors)</li>
+                        <li class="list-group-item">iAct Excel Certification</li>
+                        <li class="list-group-item">Intl. Model African Union Cert</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 ms-1">
+                    <ul>
+                        <p class="fw-bold">Tools & Platforms</p>
+                        <li class="list-group-item">APIs</li>
+                        <li class="list-group-item">GIT</li>
+                        <li class="list-group-item">Figma</li>
+                        <li class="list-group-item">LucidChart</li>
+                        <li class="list-group-item">phpMyAdmin</li>
+                        <br><br><br><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <section id="contact">
+        <div class="container-lg bg-info-subtle my-1">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-sm-10 col-md-8" style="margin-top: 2%; margin-left: 40%">
+                    <svg class="icon" width="26" height="26" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 44V24H30V44M6 18L24 4L42 18V40C42 41.0609 41.5786 42.0783 40.8284 42.8284C40.0783 43.5786 39.0609 44 38 44H10C8.93913 44 7.92172 43.5786 7.17157 42.8284C6.42143 42.0783 6 41.0609 6 40V18Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p>13 Oak Drive, Hamilton, NY 13346</p>
+                </div>
+                <div class="col-sm-10 col-md-8 justify-content-center" style="margin-top: 2%; margin-left: 40%">
+                    <svg class="icon" width="26" height="26" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M44 33.84V39.84C44.0022 40.397 43.8882 40.9483 43.665 41.4587C43.4419 41.969 43.1146 42.4272 42.7041 42.8037C42.2937 43.1803 41.8091 43.467 41.2815 43.6454C40.7538 43.8239 40.1947 43.8901 39.64 43.84C33.4857 43.1713 27.574 41.0683 22.38 37.7C17.5476 34.6293 13.4507 30.5323 10.38 25.7C6.99994 20.4824 4.89647 14.542 4.23999 8.36C4.19001 7.80693 4.25574 7.24952 4.43299 6.72324C4.61024 6.19697 4.89513 5.71337 5.26952 5.30324C5.64391 4.8931 6.0996 4.56541 6.60757 4.34104C7.11554 4.11666 7.66467 4.00052 8.21999 4H14.22C15.1906 3.99044 16.1316 4.33415 16.8675 4.96706C17.6035 5.59997 18.0841 6.47889 18.22 7.44C18.4732 9.36013 18.9429 11.2454 19.62 13.06C19.8891 13.7758 19.9473 14.5538 19.7878 15.3018C19.6283 16.0497 19.2577 16.7362 18.72 17.28L16.18 19.82C19.0271 24.8271 23.1729 28.9729 28.18 31.82L30.72 29.28C31.2638 28.7423 31.9503 28.3717 32.6982 28.2122C33.4462 28.0527 34.2241 28.1109 34.94 28.38C36.7545 29.0571 38.6399 29.5268 40.56 29.78C41.5315 29.9171 42.4188 30.4064 43.0531 31.155C43.6873 31.9036 44.0243 32.8591 44 33.84Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>      
+                    <p>+1 (315) 316-3545</p>
+                </div>
+                <div class="col-sm-10 col-md-8 justify-content-center" style="margin-top: 2%; margin-left: 40%">
+                    <svg class="icon" width="26" height="26" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M44 24H32L28 30H20L16 24H4M44 24V36C44 37.0609 43.5786 38.0783 42.8284 38.8284C42.0783 39.5786 41.0609 40 40 40H8C6.93913 40 5.92172 39.5786 5.17157 38.8284C4.42143 38.0783 4 37.0609 4 36V24M44 24L37.1 10.22C36.7688 9.55357 36.2584 8.99274 35.6259 8.60056C34.9935 8.20838 34.2642 8.00039 33.52 8H14.48C13.7358 8.00039 13.0065 8.20838 12.3741 8.60056C11.7417 8.99274 11.2312 9.55357 10.9 10.22L4 24" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>    
+                    <p>eclottey@colgate.edu</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-info p-3" style="justify-content: center">
+            <a href="https://www.linkedin.com/in/ernest-clottey-b94820279" target="_blank"><svg class="socials" width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 37%">
+                <path d="M39.5833 0H10.4167C4.66458 0 0 4.66458 0 10.4167V39.5833C0 45.3354 4.66458 50 10.4167 50H39.5833C45.3375 50 50 45.3354 50 39.5833V10.4167C50 4.66458 45.3375 0 39.5833 0ZM16.6667 39.5833H10.4167V16.6667H16.6667V39.5833ZM13.5417 14.025C11.5292 14.025 9.89583 12.3792 9.89583 10.35C9.89583 8.32083 11.5292 6.675 13.5417 6.675C15.5542 6.675 17.1875 8.32083 17.1875 10.35C17.1875 12.3792 15.5562 14.025 13.5417 14.025ZM41.6667 39.5833H35.4167V27.9083C35.4167 20.8917 27.0833 21.4229 27.0833 27.9083V39.5833H20.8333V16.6667H27.0833V20.3438C29.9917 14.9563 41.6667 14.5583 41.6667 25.5021V39.5833Z" fill="#1E1E1E"/>
+            </svg> </a>
+            <a href="https://www.instagram.com/_ec_tino/" target="_blank"><svg class="socials" width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 3%">
+                <g clip-path="url(#clip0_3_1719)">
+                <path d="M25 4.50625C31.675 4.50625 32.4667 4.53125 35.1042 4.65208C41.8792 4.96042 45.0437 8.175 45.3521 14.9C45.4729 17.5354 45.4958 18.3271 45.4958 25.0021C45.4958 31.6792 45.4708 32.4688 45.3521 35.1042C45.0417 41.8229 41.8854 45.0437 35.1042 45.3521C32.4667 45.4729 31.6792 45.4979 25 45.4979C18.325 45.4979 17.5333 45.4729 14.8979 45.3521C8.10625 45.0417 4.95833 41.8125 4.65 35.1021C4.52917 32.4667 4.50417 31.6771 4.50417 25C4.50417 18.325 4.53125 17.5354 4.65 14.8979C4.96042 8.175 8.11667 4.95833 14.8979 4.65C17.5354 4.53125 18.325 4.50625 25 4.50625ZM25 0C18.2104 0 17.3604 0.0291667 14.6937 0.15C5.61458 0.566667 0.56875 5.60417 0.152083 14.6917C0.0291667 17.3604 0 18.2104 0 25C0 31.7896 0.0291667 32.6417 0.15 35.3083C0.566667 44.3875 5.60417 49.4333 14.6917 49.85C17.3604 49.9708 18.2104 50 25 50C31.7896 50 32.6417 49.9708 35.3083 49.85C44.3792 49.4333 49.4375 44.3958 49.8479 35.3083C49.9708 32.6417 50 31.7896 50 25C50 18.2104 49.9708 17.3604 49.85 14.6937C49.4417 5.62292 44.3979 0.56875 35.3104 0.152083C32.6417 0.0291667 31.7896 0 25 0ZM25 12.1625C17.9104 12.1625 12.1625 17.9104 12.1625 25C12.1625 32.0896 17.9104 37.8396 25 37.8396C32.0896 37.8396 37.8375 32.0917 37.8375 25C37.8375 17.9104 32.0896 12.1625 25 12.1625ZM25 33.3333C20.3979 33.3333 16.6667 29.6042 16.6667 25C16.6667 20.3979 20.3979 16.6667 25 16.6667C29.6021 16.6667 33.3333 20.3979 33.3333 25C33.3333 29.6042 29.6021 33.3333 25 33.3333ZM38.3458 8.65625C36.6875 8.65625 35.3438 10 35.3438 11.6562C35.3438 13.3125 36.6875 14.6562 38.3458 14.6562C40.0021 14.6562 41.3437 13.3125 41.3437 11.6562C41.3437 10 40.0021 8.65625 38.3458 8.65625Z" fill="#1E1E1E"/>
+                </g><defs><clipPath id="clip0_3_1719"><rect width="50" height="50" fill="white"/></clipPath></defs>
+            </svg></a>
+
+            <a href="https://github.com/ec-tino" target="_blank"><svg class="socials" width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 3%">
+                <g clip-path="url(#clip0_7_355)">
+                <path d="M18 38C8 41 8 33 4 32M32 44V36.26C32.075 35.3063 31.9462 34.3476 31.622 33.4476C31.2979 32.5476 30.7859 31.7268 30.12 31.04C36.4 30.34 43 27.96 43 17.04C42.9995 14.2477 41.9254 11.5624 40 9.54C40.9117 7.09701 40.8472 4.3967 39.82 2C39.82 2 37.46 1.3 32 4.96C27.416 3.71764 22.584 3.71764 18 4.96C12.54 1.3 10.18 2 10.18 2C9.15275 4.3967 9.08829 7.09701 10 9.54C8.06025 11.5774 6.98505 14.2869 7 17.1C7 27.94 13.6 30.32 19.88 31.1C19.222 31.7799 18.7145 32.5908 18.3906 33.4798C18.0667 34.3689 17.9336 35.3161 18 36.26V44" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </g><defs><clipPath id="clip0_7_355"><rect width="48" height="48" fill="white"/></clipPath></defs>
+            </svg></a> 
+        </div>      
+    </section>
+</body>
+</html>
