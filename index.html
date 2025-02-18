@@ -162,44 +162,114 @@
     <script src="photos.js"></script>
 
     <section id="Projects">
-        <div class="container-lg">
-            <h2>Projects</h2>
-            <div class="row align-items-center">
-                <div class="col-sm-10 col-md-4 bg-info-subtle p-3" style="border-radius: 5%">
-                    <p class="text">
-                        I designed and developed a robust Employee Management System tailored to organizational 
-                        needs. Utilizing MySQL and phpMyAdmin, I built an optimized relational database for 
-                        efficient data storage and retrieval. The front end, crafted with HTML/CSS, Bootstrap, 
-                        and JavaScript, offers an intuitive interface featuring functionalities like adding/removing 
-                        employees, generating payrolls, and managing attendance. Also designed an employee directory 
-                        with AJAX-powered search and filtering to ensure dynamic and streamlined search.
-                    </p>
-                    <a href="https://github.com/ec-tino/employee_management" target="_blank"><button class="btn btn-outline-dark" style="margin-left: 30%"> Source Code</button></a>
+        <div class="container-lg" style="margin-top: 2%">
+            <h3>Projects</h3>
+            <div class="row justify-content-center">
+              
+              <!-- Project 1 -->
+              <div class="col-md-3 m-1">
+                <div class="card text-center">
+                  <img src="assets/ems.jpg" class="card-img-top" alt="Project 1" style="height: 200px">
+                  <div class="card-body">
+                    <h6 class="card-title">EMS</h6>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">More Info</button>
+                  </div>
                 </div>
-                <div class="col-sm-10 col-md-4 bg-info-subtle p-4" style="border-radius: 5%">
-                    <p class="text">Journal Entry Automator is an innovative accounting cycle optimization
-                        tool that leverages AI technology to streamline financial 
-                        data processing. By integrating Python's API with OpenAI's Chat-GPT and 
-                        Meta-AI's LLaMA, this program automates the generation of precise debits and credits 
-                        on respective T-accounts. Through its AI-driven automation, 
-                        Journal Entry Automator revolutionizes financial data management, making it a potentially 
-                        indispensable asset for accounting professionals.
-                    </p>
-                    <a href="https://github.com/ec-tino/JE-Automator" target="_blank"><button class="btn btn-outline-dark" style="margin-left: 30%"> Source Code</button></a>
+              </div>
+          
+              <!-- Project 2 -->
+              <div class="col-md-3 m-1">
+                <div class="card text-center">
+                  <img src="assets/Je_auto.JPG" class="card-img-top" alt="Project 2" style="height: 200px">
+                  <div class="card-body">
+                    <h6 class="card-title">JE Automator</h6>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">More Info</button>
+                  </div>
                 </div>
-                <div class="col-sm-10 col-md-4 bg-info-subtle p-3" style="border-radius: 5%">
-                    <p class="text">Developed a thrilling 2D space-themed game, demonstrating proficiency
-                        in Object-Oriented Programming (OOP) principles. Players navigate their avatar 
-                        through a scrolling galaxy, collecting coins while evading alien ships and meteorites. 
-                        The game features dynamic speed and difficulty adjustment scaling with player score, 
-                        collision detection and response via Java's Graphics2D API, modular reusable classes 
-                        for game entities (Player, Enemies, Collectibles), and event-driven programming, and 
-                        seamless integration of game logic, and user input handling.
-                   </p>
-                   <a href="https://github.com/ec-tino/creative_scrolling_game" target="_blank"><button class="btn btn-outline-dark" style="margin-left: 37%"> Play Game</button></a>
+              </div>
+          
+              <!-- Project 3 -->
+              <div class="col-md-3 m-1">
+                <div class="card text-center">
+                  <img src="assets/splash1.gif" class="card-img-top" alt="Project 3" style="height: 200px">
+                  <div class="card-body">
+                    <h6 class="card-title">Super Scrolling Game</h6>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">More Info</button>
+                  </div>
                 </div>
+              </div>
+          
             </div>
-        </div>
+          </div>
+          
+          <!-- Project 1 Modal -->
+          <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="project1ModalLabel">Employee Management System</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="text">
+                      I designed and developed a robust Employee Management System tailored to organizational 
+                      needs. Utilizing MySQL and phpMyAdmin, I built an optimized relational database for 
+                      efficient data storage and retrieval. The front end, crafted with HTML/CSS, Bootstrap, 
+                      and JavaScript, offers an intuitive interface featuring functionalities like adding/removing 
+                      employees, generating payrolls, and managing attendance. Also designed an employee directory 
+                      with AJAX-powered search and filtering to ensure dynamic and streamlined search.
+                  </p>
+                  <a href="https://github.com/ec-tino/employee_management" target="_blank"><button class="btn btn-outline-dark" style="margin-left: 30%"> Source Code</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2 Modal -->
+          <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="project2ModalLabel">Journal Entry Automator</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="text">Journal Entry Automator is an innovative accounting cycle optimization
+                      tool that leverages AI technology to streamline financial 
+                      data processing. By integrating Python's API with OpenAI's Chat-GPT and 
+                      Meta-AI's LLaMA, this program automates the generation of precise debits and credits 
+                      on respective T-accounts. Through its AI-driven automation, 
+                      Journal Entry Automator revolutionizes financial data management, making it a potentially 
+                      indispensable asset for accounting professionals.
+                  </p>
+                  <a href="https://github.com/ec-tino/JE-Automator" target="_blank"><button class="btn btn-outline-dark" style="margin-left: 30%"> Source Code</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 3 Modal -->
+          <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="project3ModalLabel">Super Scrolling Game</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                      <p class="text">Developed a thrilling 2D space-themed game, demonstrating proficiency
+                          in Object-Oriented Programming (OOP) principles. Players navigate their avatar 
+                          through a scrolling galaxy, collecting coins while evading alien ships and meteorites. 
+                          The game features dynamic speed and difficulty adjustment scaling with player score, 
+                          collision detection and response via Java's Graphics2D API, modular reusable classes 
+                          for game entities (Player, Enemies, Collectibles), and event-driven programming, and 
+                          seamless integration of game logic, and user input handling.
+                     </p>
+                     <a href="https://github.com/ec-tino/creative_scrolling_game" target="_blank"><button class="btn btn-outline-dark" style="margin-left: 37%"> Play Game</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
 
     <section id="Skills">
